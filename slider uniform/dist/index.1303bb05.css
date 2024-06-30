@@ -1,0 +1,44 @@
+body {
+  background-color: #f0f0f0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+#image-container {
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+  overflow: hidden;
+}
+
+#original-img, #modified-img {
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#modified-img {
+  clip: rect(0, 0, auto, 0);
+}
+
+#slider {
+  cursor: ew-resize;
+  background-color: red;
+  width: 4px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#input-container {
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=index.1303bb05.css.map */

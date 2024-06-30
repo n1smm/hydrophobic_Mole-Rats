@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effetto Immagine con Slider</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/meyda/dist/web/meyda.min.js"></script>
+</head>
+<body>
+    <div id="input-container">
+        <input type="file" id="image-input" accept="image/*">
+    </div>
+    <div id="image-container">
+        <img id="original-img"   alt="Original Image">
+        <img id="modified-img"   alt="Modified Image">
+        <div id="slider"></div>
+    </div>
+    <br><br><br>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+          <audio
+          controls
+          loop
+          crossorigin="anonymous"
+          id="audio"
+          src="https://cdn.glitch.com/184ed7fc-13aa-4fdc-98ca-8683b9a5d877%2F9579__tictacshutup__sold-break-8-bars.wav?1537042752804"
+          >
+   </audio>
+   <br>
+   <label for="level">Level</label>
+   <input type="range"
+          id="levelRange"
+          name="level"
+          min="0.0"
+          max="1.0"
+          step="0.001"
+          />
+    <input type="range"
+            id="powerSpectrumRange" 
+           min="0" 
+           max="1" 
+           step="0.01" 
+           disabled
+           />
+    <input type="button"
+    id="stopButton" 
+    value="analyze"
+    />
+   <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+
+    <script src="https://button.glitch.me/button.js"></script>
+    <script type="module" src="script.js"></script>
+    <!-- <script type="module" src="scriptMeyda.js"></script> -->
+</body>
+</html>

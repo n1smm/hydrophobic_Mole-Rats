@@ -1,0 +1,15 @@
+{
+  "name": "slider-uniform",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "http-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
